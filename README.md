@@ -4,4 +4,4 @@
 
 - Check the following link to view the project in [tinkercad](https://www.tinkercad.com/things/6mklnV2GkuA)
 
-- ![Circuit](https://github.com/MAzewail/obstacle-avoidance-robot/blob/main/Circuit%20digram.PNG)
+ ![Circuit](https://github.com/MAzewail/obstacle-avoidance-robot/blob/main/Circuit%20digram.PNG)
