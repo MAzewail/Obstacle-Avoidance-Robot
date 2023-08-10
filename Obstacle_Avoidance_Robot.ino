@@ -1,5 +1,6 @@
 #define echo 3
 #define trig 2
+#define IN4 4
 long dis=0,duration=0;
 #include <LiquidCrystal_I2C.h>
 LiquidCrystal_I2C lcd(32,16,2);
@@ -18,7 +19,7 @@ void setup()
 {
   pinMode(echo,INPUT);
   pinMode(trig,OUTPUT);
-  for(byte i=4;i<10;i++)
+  for(byte i=4;i<5;i++)
   pinMode(i,OUTPUT);
   lcd.init();
   lcd.backlight();
@@ -32,19 +33,17 @@ void loop()
 {
   ultrasonic();
   lcd.home();
-  lcd.print("dis = ");
-  lcd.print(dis);
-  lcd.print(" mm ");
-  digitalWrite(5,1);
+  lcd.print("dis = "+String(dis)+" mm ");
+  lcd.setCursor(5,1);
   if(dis>500){
-  digitalWrite(7,1);
-   lcd.setCursor(5,1);
-   lcd.print("Forward "); 
-  }
+  digitalWrite(IN4,1);
+  lcd.print("Forward "); }
+  
   else{   
-    lcd.setCursor(5,1);
+    digitalWrite(IN4,0);
     lcd.print("Right    "); }
+  
   dis=map(dis,0,3000,0,255);
-  analogWrite(8,dis);
+  analogWrite(10,dis);
   analogWrite(9,dis);
 }
