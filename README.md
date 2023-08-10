@@ -41,6 +41,8 @@ To set up and run this project, you will need the following hardware components:
 
 ## Circuit Diagram
 
+- Check the following link to view the project in [tinkercad](https://www.tinkercad.com/things/1hWNzZK2cs5)
+
  ![Circuit](https://github.com/MAzewail/obstacle-avoidance-robot/blob/main/Obstacle%20Avoidance%20Robot.png)
 
 The circuit diagram above illustrates the connections between the microcontroller board, motor driver module, ultrasonic sensor module, LED, and other components. Ensure that you make the appropriate connections based on the diagram when setting up the hardware.
