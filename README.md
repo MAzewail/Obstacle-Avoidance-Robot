@@ -1,4 +1,4 @@
-# obstacle-avoidance-robot
+# obstacle-Avoidance-Robot
 2WD Robot can avoid collision using Ultrasonic sensor to minimize the robot velocity before collision, also it has LED to print the distance and the directions.
 
 
