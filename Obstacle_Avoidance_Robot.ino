@@ -1,6 +1,8 @@
 #define echo 3
 #define trig 2
 #define IN4 4
+#define LEFT_MOTORSPEED 9
+#define RIGHT_MOTORSPEED 10
 long dis=0,duration=0;
 #include <LiquidCrystal_I2C.h>
 LiquidCrystal_I2C lcd(32,16,2);
@@ -44,6 +46,6 @@ void loop()
     lcd.print("Right    "); }
   
   dis=map(dis,0,3000,0,255);
-  analogWrite(10,dis);
-  analogWrite(9,dis);
+  analogWrite(RIGHT_MOTORSPEED,dis);
+  analogWrite(LEFT_MOTORSPEED,dis);
 }
